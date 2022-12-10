@@ -8,6 +8,13 @@ resource "aws_instance" "web" {
   encrypted     = true
   }
 
+   metadata_options {
+      
+      http_endpoint = "disabled"
+      http_tokens   = "optional"
+ }
+  
+
 
 
 
